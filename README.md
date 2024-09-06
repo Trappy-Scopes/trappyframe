@@ -2,7 +2,7 @@
 
 Repository of hardware design files for trappy scopes.
 
-![assmbly_image](/images/Assembly1_2024-Jan-12_12-07-07AM-000_CustomizedView5221869374_png_alpha-5626927.png)
+![assmbly_image](images/Assembly1_2024-Jan-12_12-07-07AM-000_CustomizedView5221869374_png_alpha.png)
 
 ## Frame Components
 
