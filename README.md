@@ -33,9 +33,9 @@ Notes:
 
 The parts are designed from standard design blocks. Two different versions exist. One for the normal parts, and one for parts which support the rods, and the box for the frame.
 
-| No   | Peripheral Block Template                     | Filename                                          | Latest versionª |
-| ---- | --------------------------------------------- | ------------------------------------------------- | --------------- |
-| 1    | Standard block template (SBT)                 | [SBTv2 v3.stl](/frame_templates/SBTv2 v3.stl)     | 2               |
-| 2    | Frame support standard block template (FSSBT) | [FSSBTv3 v3.stl](/frame_templates/FSSBTv3 v3.stl) | 3               |
+| No   | Peripheral Block Template                     | Filename                                         | Latest versionª |
+| ---- | --------------------------------------------- | ------------------------------------------------ | --------------- |
+| 1    | Standard block template (SBT)                 | [SBTv2 v3.stl](frame_templates/SBTv2 v3.stl)     | 2               |
+| 2    | Frame support standard block template (FSSBT) | [FSSBTv3 v3.stl](frame_templates/FSSBTv3 v3.stl) | 3               |
 
 ª : the version numbers correspond to the filename version for Fusion 365. 
