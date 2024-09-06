@@ -15,7 +15,7 @@ Notes:
 | No   | Peripheral                                | Filename                                                     | Latest versionª |
 | ---- | ----------------------------------------- | ------------------------------------------------------------ | --------------- |
 | -    | **TOP - Illumination controller**         | -                                                            | -               |
-| 1    | Top plate (frame support)                 | [Top Plate w Magnets(FSSBTv2) v13.stl](/Trappy-Scopes/trappyframe/blob/main/frame/Top Plate w Magnets(FSSBTv2) v13.stl) | 13              |
+| 1    | Top plate (frame support)                 | [Top Plate w Magnets(FSSBTv2) v13.stl](frame/Top Plate w Magnets(FSSBTv2) v13.stl) | 13              |
 | 2    | LED mount plate                           | [SBTv2 LED mount w studs v11.stl](/Trappy-Scopes/trappyframe/blob/main/frame/SBTv2 LED mount w studs v11.stl) | 11              |
 | 3    | Condensor mount plate                     | [Condensor Mount 25mm wo tube  (SBTv2) v3 6.3mm rod holes.stl](/frame/Condensor Mount 25mm wo tube  (SBTv2) v3 6.3mm rod holes.stl) | 3               |
 | 4    | Sample stage plate                        | [Sample Mount Agile w Small magnets (SBTv2) v7.stl](/frame/Sample Mount Agile w Small magnets (SBTv2) v7.stl) | 7               |
