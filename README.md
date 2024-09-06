@@ -23,7 +23,7 @@ Notes:
 | 6    | Tube lens upper mount plate               | [Tube Lens Holder 6.3 upper (SBTv2) v2.stl](/frame/Tube%20Lens%20Holder%206.3%20upper%20(SBTv2)%20v2.stl) | 2               |
 | 7    | Tube lens lower mount plate               | [Tube Lens Holder 6.3 lower (SBTv2) v3.stl](/frame/Tube%20Lens%20Holder%206.3%20lower%20(SBTv2)%20v3.stl) | 3               |
 | 8    | Base plate w camera mount (frame support) | [Base Plate 6.3mm (FSSBTv3) v2.stl](/frame/Base%20Plate%206.3mm%20(FSSBTv3)%20v2.stl) | 2               |
-| -    | **BOTTOM - Breadboard**                   | (ThorLabs MB3060/M)[https://www.thorlabs.com/thorproduct.cfm?partnumber=MB3060/M] | -               |
+| -    | **BOTTOM - Breadboard**                   | [ThorLabs MB3060/M](https://www.thorlabs.com/thorproduct.cfm?partnumber=MB3060/M) | -               |
 
 ª : the version numbers correspond to the filename version for Fusion 365. 
 
