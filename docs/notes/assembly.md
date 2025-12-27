@@ -48,14 +48,21 @@ How to assemble the trappy-scopes microscopes in easy to follow 100 steps:
 	4. Repeat these steps for the front side  (long one)!
 	5. Add extra screws to improve the stability, these many should work fine.
 	
-	1. With the last steps, we have also properly aligned the midplate and the topplate, so fix them with M4-5mm screws.
-	2. Unscrew the scope assembly from the breadboard (all four screws). But keep the screws there. Release the screws that connect the box to the baseplate to release some tension. Now attach the small flaps with one M3-5mm screw each on the baseplate. Do not tighten it, keep them such that they are like a flap. You can skip this step if you have no space constrains!
-	3. No put the scope on its designated position and tighten the M6 screws again! Tighten them well! It's permanent. You should be able to access the screws through the flaps.
-	4. Pass the CSI cable to the SoC (RPi 4B or smth) and tug the extra cable between the tubelens and the box. Now tighten the small portions of the box and fix them. If you have many CSI cables that are overlapping, insulate them further with Aluminium foil or something, or there will be a lot of interferance.
-	5. Add the pico board that connects to LEDs and the temperature sensor on top of the topplate. There is a breadboard and standard M2.6 screws should work well.
-	6. Now add an appropriate temperature and humidity sensor (swinging near the sample stage and run the wires through the top plate flexure on your left side).
-	7. On the right side. Add a closed Rod support clamp and use two M3-20mm screws and M3 nuts to secure them.
-	8. Assembling the LED climp complex:
-		1. TODO
-	9. Connect the sensors and LEDs to the RPi Pico based controller. Make sure to connect to the right pins and keep the connections tight.
-	10. 
+	6. With the last steps, we have also properly aligned the midplate and the topplate, so fix them with M4-5mm screws.
+	7. Unscrew the scope assembly from the breadboard (all four screws). But keep the screws there. Release the screws that connect the box to the baseplate to release some tension. Now attach the small flaps with one M3-5mm screw each on the baseplate. Do not tighten it, keep them such that they are like a flap. You can skip this step if you have no space constrains!
+	8. No put the scope on its designated position and tighten the M6 screws again! Tighten them well! It's permanent. You should be able to access the screws through the flaps.
+	9. Pass the CSI cable to the SoC (RPi 4B or smth) and tug the extra cable between the tubelens and the box. Now tighten the small portions of the box and fix them. If you have many CSI cables that are overlapping, insulate them further with Aluminium foil or something, or there will be a lot of interferance.
+	10. Add the pico board that connects to LEDs and the temperature sensor on top of the topplate. There is a breadboard and standard M2.6 screws should work well.
+	11. Now add an appropriate temperature and humidity sensor (swinging near the sample stage and run the wires through the top plate flexure on your left side).
+	12. On the right side. Add a closed Rod support clamp and use two M3-20mm screws and M3 nuts to secure them.
+	13. Assembling the LED climp complex:
+	   1. TODO
+	14. Connect the sensors and LEDs to the RPi Pico based controller. Make sure to connect to the right pins and keep the connections tight.
+ 
+# Models
+
+<!-- Use it like any other HTML element -->
+<model-viewer alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="Astronaut-Unlit.glb" shadow-intensity="1" camera-controls touch-action="pan-y" style="width: 400px; height: 400px;"></model-viewer>
+
+<!-- Use it like any other HTML element -->
+<model-viewer alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="../assets/mount1.glb" shadow-intensity="1" camera-controls touch-action="pan-y" style="width: 400px; height: 400px;"></model-viewer>

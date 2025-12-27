@@ -5,10 +5,8 @@ repo_url: https://github.com/Trappy-Scopes/trappyframe
 
 nav:
   - Home: index.md
-  - Introduction: notes/intro.md
   - Assembly Instructions:
       - Overview: notes/assembly.md
-      - API Reference: notes/assembly.md
   - All Trappy-Scopes Projects: https://trappy-scopes.github.io
 
 
