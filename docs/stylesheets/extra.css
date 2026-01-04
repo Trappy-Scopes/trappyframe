@@ -5,6 +5,6 @@
 }
 
 /* docs/stylesheets/extra.css */
-model-viewer {
-  --poster-color: #ffffff00; /* Removes the default grey background */
-}
+/*model-viewer {
+  --poster-color: #ffffff00;} /* Removes the default grey background */
+

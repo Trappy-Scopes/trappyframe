@@ -1,5 +1,23 @@
 # Assembly instructions
 
+<!-- Import the component -->
+
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+<center><model-viewer id="cluster" alt="Four scope cluster setup" src="../../assets/Cluster v4.gltf" shadow-intensity="1" camera-controls touch-action="pan-y" style="width: 400px; height: 400px; justify-content: center; camera-orbit="180deg 75deg 2.5m" camera-controls></model-viewer></center>
+
+<script>
+const mv = document.querySelector('#mv');
+
+// 90° around Z -> quaternion = (x, y, z, w)
+const angle = Math.PI / 2; // 90 degrees
+const qz = { x: 0, y: 0, z: Math.sin(angle/2), w: Math.cos(angle/2) };
+
+mv.addEventListener('load', () => {
+  mv.model.rotationQuaternion = qz;
+});
+</script>
+
+
 How to assemble the trappy-scopes microscopes in easy to follow 100 steps:
 
 1. Take a **baseplate** and mount the Rasperry Pi HQ Camera on the pegs using M2-10mm screws (X4). Remove the tripod mount from the camera as it is not required. We recommend long CSI cables (24" from Adafruit 1731). Pass the CSI cable from the slits to the camera connector. Prefer using a side which is adjacent to the **flexures**. Connect the cable (it should pass under the Baseplate and to the camera. Do not twist the cable and handle it gently.) The connectors (shiny-side) should face up towards you when you connect them to the camera.
@@ -58,7 +76,7 @@ How to assemble the trappy-scopes microscopes in easy to follow 100 steps:
 	13. Assembling the LED climp complex:
 	   1. TODO
 	14. Connect the sensors and LEDs to the RPi Pico based controller. Make sure to connect to the right pins and keep the connections tight.
- 
+
 # Models
 
 <!-- Use it like any other HTML element -->
