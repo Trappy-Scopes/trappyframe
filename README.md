@@ -4,9 +4,9 @@
 
 The microscope is primarily designed to track motile algae and is optimised for parallelisation. Multiple units can be assembled, mounted, and operated in parallel. Instructions on parallelisation, including the assmmbly of a Raspberry Pi cluster/bramble can be found in the parallel project [Trappy-Scopes/raspberry_shrub](https://github.com/Trappy-Scopes/raspberry_shrub/tree/main). The control layer software can be found in the parallel project [Trappy-Scopes/trappyscopes](https://github.com/Trappy-Scopes/trappyscopes) and instructions to configure it for `trappyframe`can be found in the [here](docs/notes/software_configuration.md).
 
-| ![assmbly_image](images/Assembly1_2024-Jan-12_12-07-07AM-000_CustomizedView5221869374_png_alpha.png) | ![Cluser](images/Clusterv4.png) |
-| :----------------------------------------------------------: | :-----------------------------: |
-|                         Single Unit                          |      Parallelised Cluster       |
+| ![assmbly_image](images/Assembly1_2024-Jan-12_12-07-07AM-000_CustomizedView5221869374_png_alpha.png) | <img src="images/Clusterv4.png" alt="Cluser" style="zoom:50%;" /> |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+|                         Single Unit                          |                     Parallelised Cluster                     |
 
 
 
