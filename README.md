@@ -4,9 +4,9 @@
 
 The microscope is primarily designed to track motile algae and is optimised for parallelisation. Multiple units can be assembled, mounted, and operated in parallel. Instructions on parallelisation, including the assmmbly of a Raspberry Pi cluster/bramble can be found in the parallel project [Trappy-Scopes/raspberry_shrub](https://github.com/Trappy-Scopes/raspberry_shrub/tree/main). The control layer software can be found in the parallel project [Trappy-Scopes/trappyscopes](https://github.com/Trappy-Scopes/trappyscopes) and instructions to configure it for `trappyframe`can be found in the [here](docs/notes/software_configuration.md).
 
-| ![assmbly_image](images/Assembly1_2024-Jan-12_12-07-07AM-000_CustomizedView5221869374_png_alpha.png) | <img src="images/Clusterv4.png" alt="cluster_image" style="zoom: 50%;" /> |
-| :----------------------------------------------------------: | :----------------------------------------------------------: |
-|                         Single Unit                          |                     Parallelised Cluster                     |
+| ![assmbly_image](images/Assembly1_2024-Jan-12_12-07-07AM-000_CustomizedView5221869374_png_alpha.png) | ![Cluser](images/Clusterv4.png) |
+| :----------------------------------------------------------: | :-----------------------------: |
+|                         Single Unit                          |      Parallelised Cluster       |
 
 
 
@@ -22,15 +22,15 @@ The microscope is primarily designed to track motile algae and is optimised for 
 
 `trappyframe` is a 3D-printed optical cage system that is ready to use after printing. It does not require thread-inserts because it relies on flexure of the material. The system is similar  to [ThorLabs Optical Cage system](https://www.thorlabs.com/optical-cage-systems) or the [Edumund Optics Optical Cage system](https://www.edmundoptics.com/c/optical-cage-system/763/ and is compatible with them. It uses **6mm support rods** and is primarily based on the a **60mm** cage footprint.
 
+
+
 The system is derived from a few block templates and allows further customisations from the same.
 
-|      |      |      |
-| ---- | ---- | ---- |
-|      |      |      |
+|                          |                                  |                              |
+| ------------------------ | -------------------------------- | ---------------------------- |
+| Component Block Template | Component Block Template w Studs | Frame Support Block Template |
 
 
-
-<model-viewer alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="Astronaut-Unlit.glb" shadow-intensity="1" camera-controls touch-action="pan-y" style="width: 400px; height: 400px;"></model-viewer>
 
 
 
