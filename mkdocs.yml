@@ -5,14 +5,17 @@ repo_url: https://github.com/Trappy-Scopes/trappyframe
 
 nav:
   - Home: index.md
-  - Assembly Instructions:
-      - notes/assembly.md
+  - Frame Elements:
+    - trappyframe/index.md
+  - Electronics & Optics:
+      - notes/electro_optics.md
   - Bill of Materials:
       - notes/bom.md
+  - Assembly Instructions:
+      - notes/assembly.md
   - Disassembly Instructions :
       - notes/disassembly.md
-  - Electronics & optics:
-      - notes/electro_optics.md
+  
   - All Trappy-Scopes Projects: https://trappy-scopes.github.io
 
 

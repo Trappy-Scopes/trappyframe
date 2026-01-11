@@ -1,10 +1,9 @@
 # Assembly instructions
 
-<!-- Import the component -->
+
 
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
-<center><model-viewer id="cluster" alt="Four scope cluster setup" src="../../assets/Cluster v4.gltf" shadow-intensity="1" camera-controls touch-action="pan-y" style="width: 400px; height: 400px; justify-content: center; camera-orbit="180deg 75deg 2.5m" camera-controls></model-viewer></center>
-
+<center><model-viewer id="mv" alt="Four scope cluster setup" src="../../assets/Cluster v4.gltf" shadow-intensity="1" camera-controls touch-action="pan-y" style="width: 600px; height: 400px; justify-content: center; camera-orbit="180deg 75deg 2.5m" camera-controls zoom=100></model-viewer></center>
 <script>
 const mv = document.querySelector('#mv');
 
@@ -16,6 +15,7 @@ mv.addEventListener('load', () => {
   mv.model.rotationQuaternion = qz;
 });
 </script>
+
 
 
 How to assemble the trappy-scopes microscopes in easy to follow 100 steps:
