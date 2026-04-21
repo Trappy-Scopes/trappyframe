@@ -13,6 +13,8 @@ nav:
       - notes/bom.md
   - Assembly Instructions:
       - notes/assembly.md
+  - Calibration:
+    - notes/calibration/index.md
   - Disassembly Instructions :
       - notes/disassembly.md
   
