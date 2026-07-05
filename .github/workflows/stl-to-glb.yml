@@ -31,16 +31,24 @@ jobs:
         if: steps.changed.outputs.count != '0'
         run: |
           sudo apt-get update
-          sudo apt-get install -y blender
+          sudo apt-get install -y blender python3-numpy
 
       - name: Convert STLs to GLB (staged, same relative paths)
         run: |
+          if [ ! -f scripts/convert_with_material.py ]; then
+            echo "::error::scripts/convert_with_material.py not found in repo"
+            exit 1
+          fi
           mkdir -p /tmp/glb_out
           while IFS= read -r stl; do
             rel="${stl%.*}.glb"
             out="/tmp/glb_out/$rel"
             mkdir -p "$(dirname "$out")"
             blender --background --python scripts/convert_with_material.py -- "$stl" "$out"
+            if [ ! -f "$out" ]; then
+              echo "::error::Failed to convert $stl — check Blender output above"
+              exit 1
+            fi
           done < /tmp/changed_stls.txt
 
       - name: Publish to glb-assets branch
