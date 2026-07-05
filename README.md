@@ -1,30 +1,74 @@
 # trappyframe
 
-`trappyframe` is a **low-cost** and **open-source** microscopy system that is **highly customisable**. It is an inverted low-magnification system (1-2X) that is built on a 3D printed opto-mechanical cage system, a few optical components, and the Raspberry Pi Hardware ecosystem. The microscope can be printed and assembled in any laboratory/school/home with a few simple tools. 
+`trappyframe` is a **low-cost** and **open-source** microscopy system that is **highly customisable**. It is an inverted **low-magnification system** (1-2X) that is built on a 3D printed opto-mechanical cage system, simple optics, and the Raspberry Pi Hardware ecosystem. This system was **build for parallelisation**. Multiple units can be assembled, mounted, and operated in parallel. The microscope can be printed and assembled in any laboratory/school/home with a few simple tools. 
 
-The microscope is primarily designed to track motile algae and is optimised for parallelisation. Multiple units can be assembled, mounted, and operated in parallel. Instructions on parallelisation, including the assmmbly of a Raspberry Pi cluster/bramble can be found in the parallel project [Trappy-Scopes/raspberry_shrub](https://github.com/Trappy-Scopes/raspberry_shrub/tree/main). The control layer software can be found in the parallel project [Trappy-Scopes/trappyscopes](https://github.com/Trappy-Scopes/trappyscopes) and instructions to configure it for `trappyframe`can be found in the [here](docs/notes/software_configuration.md).
+The microscope is primarily designed to **track motile algae**. However, it can be used as it is or customised for any general microscopy requiremnt. 
 
-| ![assmbly_image](images/Assembly1_2024-Jan-12_12-07-07AM-000_CustomizedView5221869374_png_alpha.png) | <img src="images/Clusterv4.png" alt="Cluser" style="zoom:33%;" /> |
-| :----------------------------------------------------------: | :----------------------------------------------------------: |
-|                         Single Unit                          |                     Parallelised Cluster                     |
+Instructions on parallelisation, including the assmmbly of a Raspberry Pi cluster/bramble can be found in the parallel project [Trappy-Scopes/raspberry_shrub](https://github.com/Trappy-Scopes/raspberry_shrub/tree/main). The control layer software can be found in the parallel project [Trappy-Scopes/trappyscopes](https://github.com/Trappy-Scopes/trappyscopes) and instructions to configure it for `trappyframe` can be found in the [here](docs/notes/software_configuration.md).
 
 
 
-## Scope of this repository
+## Microscope Frame
 
-1. Repository for the 3D models of the opto-mechanical components: [trappyframe](/trappyframe)
-2. Repository for other bill of materials (BOM): [BOM](/docs/notes/bom.md)
-3. Provide assembly instructions: [Assembly Instructions](/docs/notes/assembly_instructions.md)
+Out compact microscopy frame can be 3D-printed with a commercial 3D printer and be parallelised.
+
+<table align="center" border="0" cellspacing="20">
+  <tr>
+    <td align="center" border="0">
+        <img src="https://github.com/Trappy-Scopes/trappyframe/blob/main/images/Assembly1_2024-Jan-12_12-07-07AM-000_CustomizedView5221869374_png_alpha.png?raw=true" width="400"/>
+      </a><br/><b>Single Unit</b>
+    </td>
+    <td align="center">
+        <img src="https://github.com/Trappy-Scopes/trappyframe/blob/main/images/Clusterv4.png?raw=true" width="400"/>
+        </a><br/><b>Parallelised Cluster</b>
+</table>
 
 
 
-## trappyframe
+## Specialised Cage System
 
-`trappyframe` is a 3D-printed optical cage system that is ready to use after printing. It does not require thread-inserts because it relies on flexure of the material. The system is similar  to [ThorLabs Optical Cage system](https://www.thorlabs.com/optical-cage-systems) or the [Edumund Optics Optical Cage system](https://www.edmundoptics.com/c/optical-cage-system/763/ and is compatible with them. It uses **6mm support rods** and is primarily based on the a **60mm** cage footprint.
+<table align="center" border="0" cellspacing="20" style="width:100%;">
+  <colgroup>
+    <col style="width:35%;">
+    <col style="width:65%;">
+  </colgroup>
+  <tr>
+    <td align="center">
+      <img src="images/Base_plate_example.png" alt="Base plate" width="100%" /><br/>
+    </td>
+    <td align="left">
+      <h4>Camera mount base plate</h4>
+      Specialised cage-system components that serve specific purposes like camera mounting, sample holding, etc rely on flexure mechanisms to hold position. This makes assembly simpler by eliminating the need for thread inserts.
+    </td>
+  </tr>
+</table>
 
 
 
-The system is derived from a few block templates and allows further customisations from the same.
+## Build on a standard block template
+
+A standard block template was used  to design every component. The templates support a **60mm cage footprint** with **6mm support rods**.
+
+
+
+
+
+<iframe
+  style="width:100%; height:400px; border:none;"
+  srcdoc='
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <model-viewer
+      src="https://raw.githubusercontent.com/Trappy-Scopes/trappyframe/69a5afcf80012a002b0ecb415eb8199e39919581/trappyframe/block_templates/trappyframe_60mm_component_template_v1.glb"
+      alt="60mm component template"
+      auto-rotate
+      camera-controls
+      shadow-intensity="0.4"
+      exposure="1"
+      style="width:100%; height:100%; background-color:transparent;">
+    </model-viewer>
+  '>
+</iframe>
+
 
 |                          |                                  |                              |
 | ------------------------ | -------------------------------- | ---------------------------- |
@@ -32,7 +76,17 @@ The system is derived from a few block templates and allows further customisatio
 
 
 
+## Magnetic box to keep away stray light
 
+
+
+
+
+## Scope of this repository
+
+1. Repository for the 3D models of cage system components: [trappyframe](/trappyframe)
+2. Repository for other bill of materials (BOM): [BOM](/docs/notes/bom.md)
+3. Easy assembly instructions: [Assembly Instructions](/docs/notes/assembly_instructions.md)
 
 
 
