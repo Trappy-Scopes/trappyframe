@@ -9,7 +9,7 @@
         auto-rotate
         camera-controls
         shadow-intensity="0.4"
-        style="width:100%; height:300px; background-color:transparent;">
+        style="width:100%;background-color:transparent;">
       </model-viewer>
       <br/><b>Component Block Template</b>
     </td>
@@ -20,7 +20,7 @@
         auto-rotate
         camera-controls
         shadow-intensity="0.4"
-        style="width:100%; height:300px; background-color:transparent;">
+        style="width:100%;background-color:transparent;">
       </model-viewer>
       <br/><b>Component Block Template w Studs</b>
     </td>
@@ -31,7 +31,7 @@
         auto-rotate
         camera-controls
         shadow-intensity="0.4"
-        style="width:100%; height:300px; background-color:transparent;">
+        style="width:100%;background-color:transparent;">
       </model-viewer>
       <br/><b>Frame Support Block Template</b>
     </td>
