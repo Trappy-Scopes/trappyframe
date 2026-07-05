@@ -1,5 +1,7 @@
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
 <table align="center" border="0" cellspacing="20" style="width:100%; max-width:1400px;">
   <tr>
     <td align="center" style="width:33%;">
@@ -8,6 +10,8 @@
         alt="60mm component template"
         auto-rotate
         camera-controls
+        camera-orbit="0deg 75deg 40%"
+        field-of-view="25deg"
         shadow-intensity="0.4"
         style="width:100%; height:400px; background-color:transparent;">
       </model-viewer>
@@ -19,6 +23,8 @@
         alt="Component block template with studs"
         auto-rotate
         camera-controls
+        camera-orbit="0deg 75deg 40%"
+        field-of-view="25deg"
         shadow-intensity="0.4"
         style="width:100%; height:400px; background-color:transparent;">
       </model-viewer>
@@ -30,6 +36,8 @@
         alt="Frame support block template"
         auto-rotate
         camera-controls
+        camera-orbit="0deg 75deg 40%"
+        field-of-view="25deg"
         shadow-intensity="0.4"
         style="width:100%; height:400px; background-color:transparent;">
       </model-viewer>
