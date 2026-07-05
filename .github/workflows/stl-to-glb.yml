@@ -1,0 +1,70 @@
+# Written by Claude
+name: STL to GLB
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/*.stl'
+      - '**/*.STL'
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Find changed STL files
+        id: changed
+        run: |
+          BEFORE="${{ github.event.before }}"
+          if [ "$BEFORE" = "0000000000000000000000000000000000000000" ] || [ -z "$BEFORE" ]; then
+            BEFORE=$(git rev-list --max-parents=0 HEAD)
+          fi
+          git diff --name-only --diff-filter=ACM "$BEFORE" ${{ github.sha }} \
+            | grep -iE '\.stl$' > /tmp/changed_stls.txt || true
+          echo "count=$(wc -l < /tmp/changed_stls.txt)" >> $GITHUB_OUTPUT
+
+      - name: Install Blender
+        if: steps.changed.outputs.count != '0'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y blender
+
+      - name: Convert changed STLs to GLB (staged, same relative paths)
+        if: steps.changed.outputs.count != '0'
+        run: |
+          mkdir -p /tmp/glb_out
+          while IFS= read -r stl; do
+            rel="${stl%.*}.glb"
+            out="/tmp/glb_out/$rel"
+            mkdir -p "$(dirname "$out")"
+            blender --background --python scripts/convert_with_material.py -- "$stl" "$out"
+          done < /tmp/changed_stls.txt
+
+      - name: Publish to glb-assets branch
+        if: steps.changed.outputs.count != '0'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git fetch origin glb-assets 2>/dev/null || true
+          if git show-ref --verify --quiet refs/remotes/origin/glb-assets; then
+            git checkout glb-assets
+          else
+            git checkout --orphan glb-assets
+          fi
+          git rm -rf . >/dev/null 2>&1 || true
+
+          cp -r /tmp/glb_out/* .
+
+          git add .
+          if git diff --cached --quiet; then
+            echo "No GLB changes"
+          else
+            git commit -m "Convert STL to GLB from ${{ github.sha }}"
+            git push origin glb-assets
+          fi
