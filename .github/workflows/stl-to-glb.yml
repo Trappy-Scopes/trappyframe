@@ -1,5 +1,39 @@
 # Written by Claude
-- name: Convert STLs to GLB (staged, same relative paths)
+name: STL to GLB
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/*.stl'
+      - '**/*.STL'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Find STL files
+        id: changed
+        run: |
+          find . -iname '*.stl' -not -path './.git/*' | sed 's|^\./||' > /tmp/changed_stls.txt
+          echo "count=$(wc -l < /tmp/changed_stls.txt)" >> $GITHUB_OUTPUT
+
+      - name: Install Blender
+        if: steps.changed.outputs.count != '0'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y blender
+
+      - name: Convert STLs to GLB (staged, same relative paths)
         run: |
           mkdir -p /tmp/glb_out
           while IFS= read -r stl; do
