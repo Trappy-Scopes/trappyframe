@@ -10,10 +10,10 @@
         alt="60mm component template"
         auto-rotate
         camera-controls
-        camera-orbit="0deg 75deg 40%"
+        camera-orbit="0deg 75deg 60%"
         field-of-view="25deg"
         shadow-intensity="0.4"
-        style="width:100%; height:400px; background-color:transparent;">
+        style="display:block; width:100%; height:100%; min-height:500px; background-color:transparent;">
       </model-viewer>
       <br/><b>Component Block Template</b>
     </td>
@@ -23,10 +23,10 @@
         alt="Component block template with studs"
         auto-rotate
         camera-controls
-        camera-orbit="0deg 75deg 40%"
+        camera-orbit="0deg 75deg 60%"
         field-of-view="25deg"
         shadow-intensity="0.4"
-        style="width:100%; height:400px; background-color:transparent;">
+        style="display:block; width:100%; height:100%; min-height:500px; background-color:transparent;">
       </model-viewer>
       <br/><b>Component Block Template w Studs</b>
     </td>
@@ -36,10 +36,10 @@
         alt="Frame support block template"
         auto-rotate
         camera-controls
-        camera-orbit="0deg 75deg 40%"
+        camera-orbit="0deg 75deg 60%"
         field-of-view="25deg"
         shadow-intensity="0.4"
-        style="width:100%; height:400px; background-color:transparent;">
+        style="display:block; width:100%; height:100%; min-height:500px; background-color:transparent;">
       </model-viewer>
       <br/><b>Frame Support Block Template</b>
     </td>
