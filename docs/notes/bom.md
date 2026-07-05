@@ -13,7 +13,7 @@
         camera-orbit="0deg 75deg 60%"
         field-of-view="25deg"
         shadow-intensity="0.4"
-        style="display:block; width:100%; height:100%; min-height:500px; background-color:transparent;">
+        style="display:block; width:100%; height:60vh; min-height:400px; background-color:transparent;">
       </model-viewer>
       <br/><b>Component Block Template</b>
     </td>
@@ -26,7 +26,7 @@
         camera-orbit="0deg 75deg 60%"
         field-of-view="25deg"
         shadow-intensity="0.4"
-        style="display:block; width:100%; height:100%; min-height:500px; background-color:transparent;">
+        style="display:block; width:100%; height:60vh; min-height:400px; background-color:transparent;">
       </model-viewer>
       <br/><b>Component Block Template w Studs</b>
     </td>
@@ -39,7 +39,7 @@
         camera-orbit="0deg 75deg 60%"
         field-of-view="25deg"
         shadow-intensity="0.4"
-        style="display:block; width:100%; height:100%; min-height:500px; background-color:transparent;">
+        style="display:block; width:100%; height:60vh; min-height:400px; background-color:transparent;">
       </model-viewer>
       <br/><b>Frame Support Block Template</b>
     </td>
