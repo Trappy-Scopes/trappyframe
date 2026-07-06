@@ -3,18 +3,18 @@
 
 
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
-<center><model-viewer id="mv" alt="Four scope cluster setup" src="../../assets/Cluster v4.gltf" shadow-intensity="1" camera-controls touch-action="pan-y" style="width: 600px; height: 400px; justify-content: center; camera-orbit="180deg 75deg 2.5m" camera-controls zoom=100></model-viewer></center>
-<script>
-const mv = document.querySelector('#mv');
+<center>
+<model-viewer
+        src="../../assets/Cluster v4.gltf"
+        alt="60mm component template"
+        auto-rotate
+        camera-controls
+        camera-orbit="0deg 75deg 60%"
+        field-of-view="25deg"
+        shadow-intensity="0.4"
+        style="display:block; width:100%; height:60vh; min-height:400px; background-color:transparent;">
+</model-viewer>
 
-// 90° around Z -> quaternion = (x, y, z, w)
-const angle = Math.PI / 2; // 90 degrees
-const qz = { x: 0, y: 0, z: Math.sin(angle/2), w: Math.cos(angle/2) };
-
-mv.addEventListener('load', () => {
-  mv.model.rotationQuaternion = qz;
-});
-</script>
 
 ---
 
