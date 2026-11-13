@@ -1,0 +1,10 @@
+numpy
+pandas
+pyarrow
+scipy
+matplotlib
+seaborn
+allantools
+pyyaml
+jupyterlab
+trappy-explorer @ git+https://github.com/Trappy-Scopes/trappy-explorer.git

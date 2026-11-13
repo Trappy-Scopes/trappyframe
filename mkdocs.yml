@@ -15,6 +15,7 @@ nav:
       - notes/assembly.md
   - Calibrations:
     - notes/calibration/index.md
+    - LED + camera intensity fluctuations: notes/calibration/led_cam_intensity_fluctuations.ipynb
   - Disassembly Instructions :
       - notes/disassembly.md
   
@@ -26,6 +27,9 @@ plugins:
   - blogging
   - external-markdown
   - mermaid2
+  - mkdocs-jupyter:
+      execute: false          # notebooks are committed with their outputs; CI has no data
+      include_source: true
 
 #  - autorefs
 #  - redirects

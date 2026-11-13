@@ -35,7 +35,7 @@ flowchart LR
 
 | Calibration | What it measures | Acquisition script |
 |---|---|---|
-| LED + camera intensity fluctuations | Noise, drift, timescales and disturbances of the illumination, as the camera sees it | [`longterm/intensity_continuous.py`](https://github.com/Trappy-Scopes/trappyscopes/blob/main/scripts/longterm/intensity_continuous.py) |
+| [LED + camera intensity fluctuations](led_cam_intensity_fluctuations.ipynb) | Noise, drift, timescales and disturbances of the illumination, as the camera sees it | [`longterm/intensity_continuous.py`](https://github.com/Trappy-Scopes/trappyscopes/blob/main/scripts/longterm/intensity_continuous.py) |
 
 ## Running a notebook
 
