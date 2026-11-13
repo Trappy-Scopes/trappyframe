@@ -12,7 +12,7 @@ flowchart LR
     A -. some scripts .-> L[Calibration stored on the scope]
     L --> X[Later experiments]
     E --> N[Notebook: gather and analyse]
-    N --> R[Results on this site]
+    N --> R[Results in the notebook]
 ```
 
 - **Acquisition** runs on the scope. The scripts live in [trappyscopes](https://github.com/Trappy-Scopes/trappyscopes) under `scripts/`. Each run produces an experiment folder.
