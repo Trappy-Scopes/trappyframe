@@ -71,19 +71,18 @@ markdown_extensions:
   - toc:
       permalink: true
   - admonition
-  - pymdownx.superfences
   - pymdownx.highlight
   - attr_list
   - md_in_html
   - tables
+  ## One superfences entry: repeated entries override each other, and the
+  ## last one used to drop the mermaid fence, so diagrams rendered as code.
   - pymdownx.superfences:
       # make exceptions to highlighting of code:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:mermaid2.fence_mermaid_custom
-  - pymdownx.superfences:
-      custom_fences:
         - name: model-viewer
           class: model-viewer
           format: !!python/name:pymdownx.superfences.fence_code_format
