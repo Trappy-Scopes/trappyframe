@@ -12,3 +12,9 @@
 /* Download / Open in Colab buttons on notebook pages (overrides/main.html) */
 .notebook-actions .md-button { margin: 0 0.4rem 0.4rem 0; }
 .notebook-actions .md-button svg { height: 1.1em; vertical-align: -0.2em; fill: currentColor; }
+
+/* Hide code (docs/javascripts/notebook.js): drop the code inputs and their prompts; drop
+   code cells that have no output at all. Markdown, plots and tables stay. */
+body.hide-code .jp-CodeCell .jp-Cell-inputWrapper,
+body.hide-code .jp-CodeCell .jp-OutputPrompt { display: none; }
+body.hide-code .jp-CodeCell:not(:has(.jp-OutputArea-child)) { display: none; }

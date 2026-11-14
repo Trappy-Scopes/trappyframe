@@ -13,10 +13,7 @@ nav:
       - notes/bom.md
   - Assembly Instructions:
       - notes/assembly.md
-  - Calibrations:
-    - notes/calibration/index.md
-    - LED + camera intensity fluctuations: notes/calibration/led_cam_intensity_fluctuations.ipynb
-    - Storage health: notes/calibration/storage_health.ipynb
+  - Calibrations: notes/calibration/    # pages and nav generated from calibrations/
   - Disassembly Instructions :
       - notes/disassembly.md
   
@@ -26,11 +23,18 @@ nav:
 plugins:
   - search
   - blogging
+  - table-reader          # before external-markdown, which renders every {{ }} itself
   - external-markdown
   - mermaid2
+  - gen-files:
+      scripts:
+        - scripts/gen_calibration_pages.py   # notebooks + results from calibrations/
+  - literate-nav:
+      nav_file: SUMMARY.md
   - mkdocs-jupyter:
       execute: false          # notebooks are committed with their outputs; CI has no data
       include_source: true
+  - glightbox
 
 #  - autorefs
 #  - redirects
@@ -94,6 +98,7 @@ markdown_extensions:
           class: model-viewer
           format: !!python/name:pymdownx.superfences.fence_code_format
 extra_javascript:
+  - javascripts/notebook.js
   - https://cdn.jsdelivr.net/npm/es-module-shims@1.8.3/dist/es-module-shims.min.js
   - https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js
   - https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js

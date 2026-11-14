@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
-{#- Every notebook page gets two buttons: download the notebook, or open it in Colab.
+{#- Every notebook page gets three buttons: download the notebook, open it in Colab, or
+    hide its code (docs/javascripts/notebook.js).
     Notebooks live in calibrations/ in the repository; docs/ only holds symlinks to them,
     and mkdocs-jupyter (include_source) copies each one next to its rendered page. -#}
 {% block content %}
@@ -11,6 +12,8 @@
         {% include ".icons/material/download.svg" %} Download notebook</a>
       <a class="md-button" href="{{ config.extra.colab }}/{{ name }}" target="_blank" rel="noopener">
         {% include ".icons/simple/googlecolab.svg" %} Open in Colab</a>
+      <button class="md-button toggle-code" type="button">
+        {% include ".icons/material/code-tags.svg" %} <span>Hide code</span></button>
     </p>
   {% endif %}
   {{ super() }}

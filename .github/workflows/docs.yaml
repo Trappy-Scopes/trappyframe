@@ -28,6 +28,7 @@ jobs:
           pip install mkdocs-embed-external-markdown
           pip install mkdocs-mermaid2-plugin
           pip install mkdocs-jupyter
+          pip install mkdocs-gen-files mkdocs-literate-nav mkdocs-table-reader-plugin mkdocs-glightbox
 
 
       - name: Build and Deploy MkDocs
