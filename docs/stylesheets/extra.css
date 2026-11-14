@@ -8,3 +8,7 @@
 /*model-viewer {
   --poster-color: #ffffff00;} /* Removes the default grey background */
 
+
+/* Download / Open in Colab buttons on notebook pages (overrides/main.html) */
+.notebook-actions .md-button { margin: 0 0.4rem 0.4rem 0; }
+.notebook-actions .md-button svg { height: 1.1em; vertical-align: -0.2em; fill: currentColor; }

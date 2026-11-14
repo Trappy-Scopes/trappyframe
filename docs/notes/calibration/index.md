@@ -40,13 +40,18 @@ flowchart LR
 
 ## Running a notebook
 
+Every notebook page has two buttons: **Download notebook** and **Open in Colab**.
+
+- **In Colab**, the first code cell installs what Colab lacks and asks for a `.zip` of your experiment folders. For large data, mount Google Drive instead and set `DATA` to the folder.
+- **On your own computer**:
+
 ```bash
 cd calibrations
 pip install -r requirements.txt
 jupyter lab
 ```
 
-Set the data path at the top of the notebook to your own experiment folder. Each page cites the runs it was made from by experiment ID. That data is not published, so use your own.
+Set `DATA` at the top of the notebook to your own experiment folder. Each page cites the runs it was made from by experiment ID. That data is not published, so use your own.
 
 ## Persistent records
 

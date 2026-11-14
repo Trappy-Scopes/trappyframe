@@ -39,10 +39,12 @@ plugins:
 
 extra:
   homepage: https://trappy-scopes.github.io/trappyscopes/
+  colab: https://colab.research.google.com/github/Trappy-Scopes/trappyframe/blob/main/calibrations   # Open in Colab, on notebook pages
 
 theme:
   logo: assets/tsicon.png
   name: material
+  custom_dir: overrides       # notebook pages: Download / Open in Colab buttons
   primary: trappytheme
   palette:
     # Dark mode as default
