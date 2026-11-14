@@ -16,6 +16,7 @@ nav:
   - Calibrations:
     - notes/calibration/index.md
     - LED + camera intensity fluctuations: notes/calibration/led_cam_intensity_fluctuations.ipynb
+    - Storage health: notes/calibration/storage_health.ipynb
   - Disassembly Instructions :
       - notes/disassembly.md
   

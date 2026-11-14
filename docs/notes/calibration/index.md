@@ -36,6 +36,7 @@ flowchart LR
 | Calibration | What it measures | Acquisition script |
 |---|---|---|
 | [LED + camera intensity fluctuations](led_cam_intensity_fluctuations.ipynb) | Noise, drift, timescales and disturbances of the illumination, as the camera sees it | [`longterm/intensity_continuous.py`](https://github.com/Trappy-Scopes/trappyscopes/blob/main/scripts/longterm/intensity_continuous.py) |
+| [Storage health](storage_health.ipynb) | Sustained write speed, write stalls, read-back integrity and SMART health of each scope's SSD and SD card | [`debug/storage_health_statistics.py`](https://github.com/Trappy-Scopes/trappyscopes/blob/main/scripts/debug/storage_health_statistics.py) |
 
 ## Running a notebook
 
