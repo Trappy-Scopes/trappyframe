@@ -1,0 +1,9 @@
+scope,run,device,eid,n_picos,board,micropython,mounted_by_scope,calls,failed,fatal,peak_hz,ramp_p50_ms,ramp_p99_ms,burst_calls_s,reconnect_s,reset_s,drills_ok,hang_cleared_by,hang_s,schedule_thread_died,block_wait_s,unexpected_usb_drops,throttled,verdict
+M1,1,pico,0b4388b904,1,pico_m1,1.24.1,True,3467,0,False,50,7.3,8.240000000000009,148.47656674698993,1.053,3.673,True,interrupt,10.4,True,10.21,0,0x0,PASS
+M2,1,pico,99bccfb67c,1,pico_m2,1.24.1,True,3462,0,False,50,7.3,8.6,148.25930177894062,1.068,3.652,True,interrupt,10.4,True,10.21,0,0x0,PASS
+M3,1,pico,49ba4f8773,1,pico_m3,1.24.1,True,3460,0,False,50,7.3,8.3,147.59236834763635,1.081,3.693,True,interrupt,10.4,True,10.21,0,0x0,PASS
+M4,1,pico,657de260bf,1,pico_m4,1.24.1,True,3415,0,False,50,7.3,8.1,144.58152827916257,1.118,3.71,True,interrupt,10.4,True,10.21,0,0x0,PASS
+M5,1,pico,2fc667b439,1,pico_m5,1.23.0,True,3845,0,False,50,6.4,7.316000000000008,171.96772438539213,1.259,3.805,True,interrupt,10.4,True,10.03,0,0x0,PASS
+M6,1,pico,db50534a8c,1,picodev,1.24.0,True,3526,0,False,50,7.1,8.1,152.12751809947477,1.017,3.598,True,interrupt,10.4,True,10.21,0,0x0,PASS
+M7,1,pico,a508c8cd0b,1,picodev,1.24.0,True,3475,0,False,50,7.3,8.233999999999991,148.57295227718916,0.914,3.535,True,interrupt,10.4,True,10.21,0,0x0,PASS
+M8,1,pico,9ac6a1c1fb,1,picodev,1.24.0,True,3463,0,False,50,7.2,8.3,147.9258350632885,1.078,3.69,True,interrupt,10.4,True,10.21,0,0x0,PASS
