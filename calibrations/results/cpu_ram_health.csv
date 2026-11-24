@@ -1,0 +1,9 @@
+scope,run,eid,serial,standard,stress_exit,complete,wrong_results,kernel_faults,oom,throttle_during,clock_held_pct,soc_max_c,swap_max_mib,script_verdict,room_c,plateau_c,rise_c,cooldown_tau_s,fan_on_pct,ssd_model,cpu_1t_pct,cpu_4t_pct,mem_write_4t_pct,mem_read_4t_pct,verdict
+M1,1,42f4e58e70,10000000ffc8aa8e,True,0,True,0,0,0,none,100.0,60.4,200,WARN,23.49,58.31,34.82,49.1,,,0.21,-0.02,-3.16,-6.4,PASS
+M2,1,b0f3f80ada,1000000041022642,True,0,True,0,0,0,none,100.0,66.7,200,WARN,23.58,63.42,39.84,42.36,98.75,,-0.22,-0.16,-0.14,0.21,PASS
+M3,1,d38bf78ca4,100000002e28ecf2,True,0,True,0,0,0,none,100.0,60.9,200,WARN,24.1,56.82,32.71,33.3,0.0,,-0.03,0.06,0.11,-2.87,PASS
+M4,1,93fa480544,10000000ab5e3c59,True,0,True,0,0,0,none,100.0,65.7,200,WARN,23.29,61.25,37.96,41.18,98.89,,0.0,0.02,-0.08,-0.21,PASS
+M5,1,8891d6ebf2,10000000835925c4,True,0,True,0,0,0,none,100.0,69.1,200,WARN,23.28,66.65,43.37,72.37,99.06,,-0.0,-0.02,0.43,2.08,PASS
+M6,1,6faed330aa,10000000a454aaaa,True,0,True,0,0,0,none,100.0,78.9,200,WARN,23.84,75.76,51.92,80.84,99.97,,-0.21,-0.05,-1.67,-1.72,PASS
+M7,1,b2c6a2f030,100000000694de70,True,0,True,0,0,0,none,100.0,73.0,512,WARN,23.54,70.06,46.52,67.47,99.69,,0.23,0.08,0.08,3.1,PASS
+M8,1,1787af3c61,10000000edf795c6,True,0,True,0,0,0,none,100.0,76.0,512,WARN,23.34,72.47,49.12,63.97,100.0,,0.19,0.08,1.13,1.72,PASS
